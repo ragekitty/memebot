@@ -22,12 +22,6 @@ async def on_message(message):
     if message.author == client.user:
         return
     # meme me daddy
-    reddit = asyncpraw.Reddit(
-        client_id="",
-        client_secret="",
-        user_agent="Discord_bot",
-        aiohttp_kwargs={"timeout": 10},
-    )
     list = []
     subreddit = await reddit.subreddit("memes")
     async for submission in subreddit.hot(limit=50):
