@@ -9,6 +9,7 @@ intents = discord.Intents().all()
 intents.members = True
 client = discord.Client(intents=intents)
 
+# Create reddit connection
 reddit = asyncpraw.Reddit(
     client_id="reddit id goes here",
     client_secret="reddit secret goes here",
