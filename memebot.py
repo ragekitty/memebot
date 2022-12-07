@@ -23,8 +23,8 @@ async def on_message(message):
         return
     # meme me daddy
     reddit = asyncpraw.Reddit(
-        client_id="oid8ZUYxYTA7TmgCWDN1RQ",
-        client_secret="cvTuSNwJl3i8-6m1Q9evk2_KLzZBLg",
+        client_id="",
+        client_secret="",
         user_agent="Discord_bot",
         aiohttp_kwargs={"timeout": 10},
     )
