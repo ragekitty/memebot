@@ -27,5 +27,5 @@ async def on_message(message):
     await message.channel.send(random.choice(list).url)
 
 # Run the bot
-client.run('DISCORD KEY GOES HERE')
+client.run('DISCORD TOKEN GOES HERE')
 
