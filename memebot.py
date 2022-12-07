@@ -10,8 +10,8 @@ intents.members = True
 client = discord.Client(intents=intents)
 
 reddit = asyncpraw.Reddit(
-    client_id="xxx",
-    client_secret="xxx",
+    client_id="reddit id goes here",
+    client_secret="reddit secret goes here",
     user_agent="Discord_bot",
     aiohttp_kwargs={"timeout": 10},
 )
@@ -34,4 +34,4 @@ async def on_message(message):
     await message.channel.send(random.choice(list).url)
 
 # Run the bot
-client.run('discord api goes here')
+client.run('discord key goes here')
